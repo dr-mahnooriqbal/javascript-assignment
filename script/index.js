@@ -108,41 +108,13 @@ var Nationality = prompt( ' Enter yur nationality')
 var Gender = prompt( ' Enter your gender' )
 var Age = +prompt( 'How old are you?')
 
-if( Nationality =='pakistani' || Nationality =='indian' ) {
-    if( Gender== 'male' && Age >= 18){
-    
-        alert( 'Hurray!You are eligible to cast your vote')
+var userInput = +prompt("Please enter your income:");
+
+if (isNaN(userInput)) {
+  alert("Invalid input! Please enter a valid number.");
+} else {
+
+var result = zakatPercentage * userInput;
+
+  alert(`Your zakat value is ${result}`);
 }
-else if (Gender== 'female' && Age >= 18 ){
-    var MaritalStatus= prompt( 'Whats your marital status?') 
-    if ( MaritalStatus== 'married'){
-        alert('Hurray!You are eligible to cast your vote')
-    }
-    else {
-        alert( 'Sorry,You are not eligible to cast your vote')
-}
-    
-}
-else{
-    
-}
-
-}
-
-
-else (
-    alert( 'you are not eligible to cast your vote')
-
-
-    // /* assignment 2 - part 8 javascript dated 11 apr
-    You have an array of that contains the name of Pakistani Teams Player selected for
-WorldCup (15 Players) named as WorldCupSquad. Now tomorrow we have a match with
-India, So make an array of final team players (11 Players) that will be playing in tomorrows
-match from the WorldCupSquad array.
-
-
-// var WorldCupSquad = [   "Ali" , "Asad" , "shoaib" , "Yousuf" , "hamza" , "hassan" , "Rameez" , "ahmed" , "shaheen" ,"Zaki" , "sarim" , "huzaifa" , "usman" , "abdullah" , "abdurrehman"]
-// alert( "display Worldcup squad:" + " " +WorldCupSquad)
-// var SelectedPlayers = WorldCupSquad.slice(4,15 )
-
-// alert( ' display final team members:' +" " + SelectedPlayers)
